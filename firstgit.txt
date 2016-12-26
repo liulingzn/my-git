@@ -1,14 +1,1 @@
-.clause{width:96%;margin:0 auto; font-size:0.9rem;color:#4d4d4d;}
-.clause a{color:#2a76c1;}
-
-
-
-
-<%@include file="guidance.jsp" %>
-	<div class="manageData">
-		<div class="manageAddress">
-			<p>订单>预订量>高新四路店</p>
-			<span><input id="earchContent" type="text" value="yu20161010"  /><span id="search">搜索订单号</span></span>
-		</div>
-		
-	</div>
+this is my note
