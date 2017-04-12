@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<meta charset="UTF-8">
+<head>
+   
+     
+    <style type="text/css">
+        div{width:150px;height:150px;text-align: center;border: 1px solid red;display: flex;
+    justify-content:center;
+    align-items:Center; }
+        div img{max-width: 150px;max-height: 150px; }
+    
+    </style>
+</head>
+<body>
+    <p>
+        说明：<br>
+        图片是宽图    则width:100%    垂直居中<br>
+        图片是窄图    则height:100%   左右居中<br>
+        图片小于div   则上下左右居中<br>
+        (仅测试谷歌火狐浏览器)
+    </p>
+    <div>
+        <img src="narrow.jpg" alt="">
+    </div>
+    <div>
+        <img src="wide.jpg" alt="">
+    </div>
+    <div>
+        <img src="min.jpg" alt="" width="60">
+    </div>
+
+</body>
+
+</html>
