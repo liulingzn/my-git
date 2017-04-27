@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>jquertMobile</title>
+<link rel="stylesheet" href="../jquery.mobile-1.4.5.min.css">
+<script src="../jquery.min.js"></script>
+<script src="../jquery.mobile-1.4.5.min.js"></script>
+<!-- 
+	data-role="listview"属性设置了ul的mobile样式  ul默认全屏
+	不添加此属性就会 没有任何样式
+	data-inset="true" 切换样式  让ul两边留有间隙
+	data-role="list-divider"会让li变成灰色类似于标题一样不可点
+	li中的a标签会默认加入跳转样式   有两个a   第二个a会占据右边一点分隔开
+ -->
+</head>
+<body>
+
+<div data-role="content">
+	 <ul data-role="listview" data-inset="true">
+	 	<li data-role="list-divider">is li</li>
+	 	<li>is li</li>
+	 	<li data-role="list-divider">is li</li>
+	 	<li>
+	 		<a href="#">is  dsada <span class="ul-li-count">5</span></a>
+	 		<a href="#">is  dsada <span class="ul-li-count">5</span></a>
+	 	</li>
+	 	<li><a href="#"> <img src="000.jpg" alt="" class="ul-li-icon"> is li</a><a href="#">is  dsada <span class="ul-li-count">5</span></a></li>
+	 	<li> <img src="001.jpg" alt="" class="ul-li-icon"> is li</li>
+	 </ul>
+	 <ul data-role="listview" data-filter="true" data-inset="true" 
+	 data-filter-placeholder="请输入搜索内容">
+	 	<li data-role="list-divider">bands</li>
+	 	<li>planned obscolencense</li>
+	 	<li>planned obscolencense</li>
+	 	<li>planned obscolencense</li>
+	 	<li>planned obscolencense</li>
+	 	<li>planned obscolencense</li>
+	 	<li>planned obscolencense</li>
+	 	<li>text</li>
+	 </ul> 
+</div>
+	
+</body>
+
+</html>

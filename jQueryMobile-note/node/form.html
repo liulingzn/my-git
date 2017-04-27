@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>jquertMobile</title>
+<link rel="stylesheet" href="../jquery.mobile-1.4.5.min.css">
+<script src="../jquery.min.js"></script>
+<script src="../jquery.mobile-1.4.5.min.js"></script>
+	
+<!--form 表单的一些内置样式   挺不错的  要是不用自己在二次修改就好了
+
+select
+
+-->
+</head>
+<body>
+
+</div>
+<div data-role="page">
+	<div data-role="header">
+		<h1>header</h1>
+	</div>
+	<div data-role="content">
+			<form id="login" name="login" action="loin.php" method="POST">
+				<!--让名字和输入框在能放下的情况显示一行  反之显示两行 -->
+				<div data-role="fieldcontain">
+					<label for="username">Username:</label>
+					<input type="text" name="username" id="username" value=""><br>
+				</div>
+				<div data-role="fieldcontain">
+				<label for="password">passworld:</label>
+				<input type="password" name="password" id="password" value=""><br>
+				</div>
+				<input type="hidden" name="hiddenInput" id="hiddenInput" value="secret message">
+				<input type="submit" name="loginSubmit" id="loginSubmit" value="login">
+			
+				<fieldset>
+					<legend>fieldset legent</legend>
+					<input type="radio" name="radio-group-1" id="radio" value ="radio">
+					<label for="radio">one</label>
+					<input type="radio" name="radio-group-1" id="radio1" value ="radio1">
+					<label for="radio1">one</label>
+				</fieldset>
+
+				<select name="size-select" id="size-select">
+					<option value="small">small</option>
+					<option value="small">asda</option>
+					<option value="small">fffff</option>
+				</select>
+				<div data-role="fieldcontain">
+					<label>werwe:</label>
+					<input type="range" name="" id="" value="10" min="0" max="100">
+				</div>	
+				<div data-role="fieldcontain">
+				<select data-role="slider" id="select">
+					<option>one</option>
+					<option>two</option>
+				</select>
+				</div>
+				<div data-role="fieldcontain">
+				<label for="search">search</label>
+				<input type="search" id="search" value="">
+				</div>
+			</form>
+	</div>
+	<div data-role="footer">
+		<h1>footer</h1>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$("#select").change(function(){
+		console.log(this.value)
+	})
+
+</script>
+</body>
+
+</html>

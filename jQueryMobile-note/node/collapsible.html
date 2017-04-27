@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>jquertMobile</title>
+<link rel="stylesheet" href="../jquery.mobile-1.4.5.min.css">
+<script src="../jquery.min.js"></script>
+<script src="../jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript">
+	/*
+	
+	
+	
+	折叠 部分这里我只是按照文档简单的写了下    确实有折叠的效果  还算美观   
+
+	但是不能直接使用在项目中   样式应该可以自定     后续会在做补充
+
+
+	data-role="header"和data-role="header"
+	属于页眉页脚 
+	他们里面的a标签默认为按钮  是作为工具栏显示
+
+	data-position="fixed" 可以使页眉页脚固定在头和尾
+
+	我尝试了自己去定义背景色  但是没有反应   后期我会查阅一下资料回答这个问题
+	*/
+	
+
+</script>
+<style>
+	.red{background-color:red;color:#ffffff;}
+
+
+	
+</style>
+</head>
+<body>
+
+<div data-role="page" data-fullscreen="true">
+	<div data-role="header" data-position="fixed" >
+		<a href="#" class="red">button</a>
+		<h1>collapsible</h1>
+		<a href="#">two</a>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#" class="red">one</a></li>
+				<li><a href="#">two</a></li>
+				<li><a href="#">three</a></li>
+				<li><a href="#">one</a></li>
+				<li><a href="#">three</a></li>
+			</ul>
+		</div>
+	</div>
+	<div data-role="content">
+		<div data-role="collapsible"data-collapsed="false">
+			<h2>collapsible</h2>
+			<p>
+				collapsible<br>
+				collapsible<br>
+				collapsible<br>
+				collapsible<br>
+				collapsible<br>
+			</p>
+		</div>
+		<div data-role="collapsible-set">
+			<div data-role="collapsible" data-collapsed="false">
+				<h2>collapsible</h2>
+				<p>
+					collapsible<br>
+					collapsible<br>
+					collapsible<br>
+					collapsible<br>
+					collapsible<br>
+				</p>
+			</div>
+			<div data-role="collapsible">
+				<h2>collapsible</h2>
+				<p>
+					collapsible<br>
+					collapsible<br>
+					collapsible<br>
+					collapsible<br>
+					collapsible<br>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div data-role="footer" class="ui-bar" data-position="fixed" >
+		<!-- 创建一个控制组 -->
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="#" data-role="button" >one</a>
+			<a href="#" data-role="button">one</a>
+			<a href="#" data-role="button" >one</a>
+			<a href="#" data-role="button">one</a>
+		</div>
+		
+	</div>
+</div>
+
+
+
+</body>
+
+</html>

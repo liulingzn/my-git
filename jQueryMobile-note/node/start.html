@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>jquertMobile</title>
+<link rel="stylesheet" href="../jquery.mobile-1.4.5.min.css">
+<script src="../jquery.min.js"></script>
+<script src="../jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript">
+	
+	$(document).on("mobileinit",function(){
+		$.extend($.mobile,{
+			pageLoadErrorMessage:'Either the page cannot be foundor it be loaded'
+		});
+	});
+	$(document).on("pageinit","#pageinit2",function(){
+		alert("pageinit is bound")
+	})
+	$(function(){
+		alert($("#heheh").attr("data-date"))
+	})
+
+	/*
+	本页面只是初级引用下  jQueryMobile    
+
+	jQueryMobile 多数为ajax引用   所以load后的ajax改变数据无法局部刷新   
+
+	使用 pageinit   不过最新版本已经换成 pagecreate 
+
+	然后自己尝试了下获取自定义属性值   
+
+	jQueryMobile 将页面默认为3部分
+
+	页眉 <div>data-role="header"</div>
+	页内容 <div>data-role="content"</div>
+	页角 <div>data-role="footer"</div>
+	
+
+	这3部分必须要包含在一个page里面
+	页面
+	<div>data-role="page">
+
+		页眉 <div>data-role="header"</div>
+		页内容 <div>data-role="content"</div>
+		页角 <div>data-role="footer"</div>
+
+	</div>
+	
+	这里提一下  每个page属性的div就相当于一个页面 
+
+	一个body里面可以有多个 page   但是  他们只会显示第一个 其他的会隐藏
+
+	用链接跳转即可   就像真的换了一个页面似得
+
+	但是也有缺陷   就是有多个page   索引会认为你是可以隐藏 为了提高搜索率  
+
+	建议还是分成一个个页面写  注册登录页面可以一起写 
+
+	*/
+</script>
+</head>
+<body>
+<div data-role="page">
+	<div data-role="header">
+		<h1 id="heheh" data-date="30">header</h1>
+	</div>
+	<div data-role="content">
+		<p>content p text</p>
+		<a href=".3424baidu.com" data-role="button"> click open a new page</a>
+	</div>
+
+</div>
+
+
+
+</body>
+
+</html>
