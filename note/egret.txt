@@ -1,0 +1,80 @@
+
+//list 默认选择第一个
+this.list.selectedIndex = 0;  
+
+
+//单利模式
+一个类仅有一个实例，保证系统中一个类只有一个实例  即一个类只有一个对象实例
+
+例子：
+
+
+Ajax.POST(Conf.shoot+"gamerecord",{tokenId:""},(data) => {
+			console.log(data.suwrId);
+			
+		})
+
+
+
+class footer{
+
+    private static _instance :SiegeFooter
+    public static getInstance(){
+
+
+	if(!SiegeFooter._instance){
+
+	SiegeFooter._instance=new SiegeFooter()
+
+	}
+
+	return SiegeFooter._instance;
+
+   }
+
+}
+
+
+class Home{
+
+	var Sigege_footer=SiegeFooter.getInstance()
+
+
+
+}
+
+
+
+this.myList1.itemRenderer=Mylist
+
+   this.myList1.dataProvider=new eui.ArrayCollection
+
+
+this.horizontalCenter=0
+		this.verticalCenter=-10      touchEnabled
+
+
+.addEventListener(eui.ItemTapEvent.ITEM_TAP, this.EnemyInformation, this)
+
+
+EnemyInformation(e: eui.PropertyEvent){
+	
+	e.item。data
+
+
+}
+ 
+this.F_scroller.scrollPolicyH = eui.ScrollPolicy.OFF
+
+
+UserTower.commonDP.addEventListener(eui.UIEvent.CHANGE, this.Statistics, this)
+
+
+
+.addEventListener(eui.CollectionEvent.COLLECTION_CHANGE , this.Statistics, this)
+
+
+lable    \n换行
+
+
+.refresh() 更新list    datachanged
