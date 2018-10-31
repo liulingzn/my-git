@@ -1,4 +1,4 @@
-
+﻿
 //list 默认选择第一个
 this.list.selectedIndex = 0;  
 
@@ -78,3 +78,93 @@ lable    \n换行
 
 
 .refresh() 更新list    datachanged
+
+
+
+		var isGoOn = true
+		ButMin.BtnS(this.button)
+		this.button.addEventListener(egret.TouchEvent.TOUCH_CANCEL, (e: egret.TouchEvent) => {
+			isGoOn = false
+		}, this)
+		this.button.addEventListener(egret.TouchEvent.TOUCH_BEGIN, (e: egret.TouchEvent) => {
+			isGoOn = true
+		}, this)
+		this.button.addEventListener(egret.TouchEvent.TOUCH_END, () => {
+			if (!isGoOn) {
+				return
+			}
+
+
+			// dai  ma 
+		
+
+
+	   }, this)	
+
+
+	   visible.up="false" visible.down="true"
+	   
+
+	public constructor() {
+		super();
+		this.percentWidth = this.percentHeight = 100
+		this.addEventListener(eui.UIEvent.COMPLETE, this.lotteryInit, this)
+
+		this.addEventListener(egret.Event.REMOVED_FROM_STAGE, this.onRemove, this)
+		this.skinName = "resource/eui_skins/PrizeDraw.exml"
+	}
+
+
+
+
+	   onRemove() {
+		this.removeEventListener(egret.Event.REMOVED_FROM_STAGE, this.onRemove, this)
+		this.removeEventListener(eui.UIEvent.COMPLETE, this.lotteryInit, this)
+		this.timer.stop()
+		this.timer = null
+		DaZhuanPanModel.getInstance().removeEventListener("dazhuangpan_reward", this.choujiang, this)
+	}
+
+
+	this.validateNow()  //立刻计算
+
+
+	self.pageScroller.stopAnimation()  Scroller停止滑动
+			self.DB.refresh()
+	self.pageGroup.scrollV=0    Scroller置顶
+
+
+button  
+
+	   this.leftBtn.addEventListener(egret.TouchEvent.TOUCH_BEGIN,this.leftMouseDownHandler,this);
+        this.leftBtn.addEventListener(egret.TouchEvent.TOUCH_END,this.leftMouseUpHandler,this);
+        this.leftBtn.addEventListener(egret.TouchEvent.TOUCH_RELEASE_OUTSIDE,this.leftMouseUpHandler,this);
+	
+
+
+	音频
+	this.audio_Btn = new egret.Sound();
+    this.audio_Btn.load("resource/sound/btnM.mp3");
+	this.audio_Btn.play(0, 1);
+
+
+
+	/async  等待方法完成/
+	private async rankHandler(e: egret.TouchEvent) {
+		
+		
+		await platform.openFriendCloudStorage(keyList);
+		用await  后下面的代码会等方法执行完成再运行
+		console.log("排行榜");
+		
+	}
+
+
+	5.2.6
+<e:Group x="32" verticalCenter="-3.5" cacheAsBitmap="true">
+			<e:Image id="myIcon" width="115" height="115" source="" horizontalCenter="0" verticalCenter="0"/>
+			<e:Image id="myMask" source="titleBg_png" width="115" height="115" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+
+
+
