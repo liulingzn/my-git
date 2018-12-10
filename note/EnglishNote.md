@@ -2,7 +2,10 @@
 #### ability
 #### persevere 
 #### success
+#### message 
+#### absolute
+#### accompany
 
-# message 
-# absolute
-# accompany
+# airplane
+# nurse
+# depend
