@@ -5,7 +5,10 @@
 #### message 
 #### absolute
 #### accompany
+#### airplane
+#### nurse
+#### depend
 
-# airplane
-# nurse
-# depend
+# doctor 
+# economy
+# elitist
