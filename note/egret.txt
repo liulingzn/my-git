@@ -166,5 +166,38 @@ button
 			<e:Image id="myMask" source="titleBg_png" width="115" height="115" horizontalCenter="0" verticalCenter="0"/>
 		</e:Group>
 
+手机端打印
+<!--<script src="http://game.yingshe.com/vconsole.min.js"></script>
+<script>
+  // 初始化
+  var vConsole = new VConsole();
+  console.log('VConsole is cool');
+</script>-->
+
+获取group 子元素长度
+
+this.group.numChildren
+
+改变item
+if(this.CarData.source[i].data_id==data.data_id){
+	this.CarData.source[i].end_second=data.end_second;
+	this.CarData.itemUpdated(this.CarData.source[i]);
+}
+
+
+e.target.name
+
+
+一维数组   map[index]
+二维数组   maop[row][column]
+
+index =  row * 列数+ column
+row  =Math.floot(index/列数)
+
+column =index/列数
+
+
+
+
 
 
